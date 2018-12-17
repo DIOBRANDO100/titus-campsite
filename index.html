@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Space</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity id="cameraCursor" position="0 0 0"></a-entity>
+      
+      
+      <a-assets>
+          <a-assets-item id="muda" src="models/christmas/model.gltf"></a-assets-item>
+          <a-assets-item id="killa" src="models/robot/model.gltf"></a-assets-item>
+          <a-assets-item ></a-assets-item>
+      </a-assets>
+      <a-assets>
+    <img id="jojo" src="DIO.png">
+  </a-assets>
+      <a-entity>
+      <a-entity
+          gltf-model="#muda"
+          position="0 0.5 -2"
+        ></a-entity>
+        <a-entity 
+          gltf-model="#killa"
+          position="0 2 -6"
+        >
+        </a-entity>
+        <a-entity 
+          gltf-model="#water"
+          position="0 0 0"
+          scale="200 2 200"
+          rotation="0 0 0"></a-entity>
+        </a-entity>
+   <a-sphere 
+         position="-10 1.60 -10" 
+         radius="1.24" 
+         rotation="-20 5 10" 
+         src="image/Ball.jpg"></a-sphere>
+  <a-plane color="blue" height="100" width="100" rotation="-90 0 0"></a-plane>
+    </a-scene>
+  </body>
+</html>
